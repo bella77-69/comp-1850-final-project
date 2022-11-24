@@ -7,7 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="../styles/main.css">
-    <title>Gallery Page</title>
+    <title>Location Page</title>
 </head>
 
 <body>
@@ -26,7 +26,7 @@
                     <a href="./menu-page.html" class="header-nav__link">Menu</a>
                 </li>
                 <li class="header-nav__item">
-                    <a href="./location-page.html" class="header-nav__link">Location</a>
+                    <a href="#" class="header-nav__link">Location</a>
                 </li>
                 <li class="header-nav__item">
                     <a href="./gallery-page.html" class="header-nav__link">Gallery</a>
@@ -45,48 +45,50 @@
             </div>
         </nav>
     </header>
-
     <main>
-        <section class="gallery">
-        <div class="gallery-title--wrapper">
-            <h2 class="gallery-title">Steamy Cup Gallery</h2>
-        </div>
-            <div class="gallery-wrapper">
-      
-                <div class="gallery-img--wrapper">
-            <img class="gallery-img"
-                src="../assets/images/gallery-1.png">
-            </div>
-            <div class="gallery-img--wrapper">
-                <img class="gallery-img"
-                src="../assets/images/gallery-6.jpg">
-            </div>
-           
-            <div class="gallery-img--wrapper">
-            <img class="gallery-img"
-                src="../assets/images/gallery-2.png">
-            </div>
-            <div class="gallery-img--wrapper">
-                <img class="gallery-img"
-                src="../assets/images/gallery-3.png">
-            </div>
-            <div class="gallery-img--wrapper">
-                <img class="gallery-img"
-                src="../assets/images/gallery-4.jpg">
-            </div>
-            <div class="gallery-img--wrapper">
-                <img class="gallery-img"
-                src="../assets/images/gallery-5.jpg">
-            </div>
-            <div class="gallery-img--wrapper">
-                <img class="gallery-img" src="../assets/images/gallery.png">
+        <section class="location">
+            <div class="location-box">
+                <h2 class="location-title">Steamy Cup Location</h2>
+                <div class="location-box--wrapper">
+
+                    <div class="location-box__content">
+                        <album class="location-box__container">
+
+                            <h3 class="location-box__title">Hours</h3>
+
+                            <div class="location-box__container--wrapper">
+                                <p class="location-box__text">Monday - Friday: 7:00am - 5:00pm</p>
+                                <p class="location-box__text">Saturday: 8:00am - 4:00pm</p>
+                                <p class="location-box__text">Sunday: 9:00am - 4:00pm</p>
+                                <p class="location-box__text">Closed on Holidays</p>
+                            </div>
+                        </album>
+
+                        <album class="location-box__container">
+                            <h3 class="location-box__title">Address</h3>
+
+                            <div class="location-box__container--wrapper">
+                                <p class="location-box__text">1234 Coffee Street</p>
+                                <p class="location-box__text">Seattle, WA 98101</p>
+                            </div>
+                        </album>
+
+                        <album class="location-box__container">
+                            <h3 class="location-box__title">Contact</h3>
+
+                            <div class="location-box__container--wrapper">
+                                <p class="location-box__text">604-123-4567</p>
+                                <p class="location-box__text">coffee@gmail.com</p>
+                            </div>
+                        </album>
+                    </div>
+                    <album class="location-box__container">
+                        <div class="location-box__image--wrapper">
+                            <img src="../assets/images/location-map.png" alt="location map">
+                        </div>
+                    </album>
                 </div>
-            <div class="gallery-img--wrapper">
-                <img class="gallery-img"
-                src="../assets/images/gallery-7.png">
-            </div>
-            </div>
-            </section>
+        </section>
     </main>
     <footer class="footer">
         <div class="inner-footer">
@@ -97,22 +99,15 @@
                         <source srcset="../assets/logo/logo22.png" media="(min-width: 1280px)">
                         <img src="../assets/logo/logo22_sm.png" alt="logo-image">
                     </picture>
-            </a>
+                </a>
             </div>
 
             <div class="footer-items footer-items__top">
                 <h3 class="footer-items__title">Quick Links</h3>
                 <ul class="footer-items__content">
-
                     <li class="footer-items__list"><a href="../index.html">Home</a></li>
-
-
                     <li class="footer-items__list"><a href="./menu-page.html">Menu</a></li>
-
-
-                    <li class="footer-items__list" > <a href=".gallery-page.html">Gallery</a></li>
-
-
+                    <li class="footer-items__list"> <a href=".gallery-page.html">Gallery</a></li>
                     <li class="footer-items__list"> <a href="../index.html">About</a></li>
 
                 </ul>
@@ -136,9 +131,11 @@
             <div class="footer-items">
                 <h3 class="footer-items__title">Contact us</h3>
                 <ul class="footer-items__content">
-                    <li class="footer-items__list"><i class="fa fa-map-marker" aria-hidden="true"></i>1234 Coffee Street</li>
+                    <li class="footer-items__list"><i class="fa fa-map-marker" aria-hidden="true"></i>1234 Coffee Street
+                    </li>
                     <li class="footer-items__list"><i class="fa fa-phone" aria-hidden="true"></i>604-123-4567</li>
-                    <li class="footer-items__list"><i class="fa fa-envelope" aria-hidden="true"></i>coffee@gmail.com</li>
+                    <li class="footer-items__list"><i class="fa fa-envelope" aria-hidden="true"></i>coffee@gmail.com
+                    </li>
                 </ul>
 
                 <div class="social-media">

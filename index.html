@@ -27,7 +27,7 @@
                 </li>
 
                 <li class="header-nav__item">
-                    <a href="#" class="header-nav__link">Location</a>
+                    <a href="./pages/location-page.html" class="header-nav__link">Location</a>
                 </li>
                 <li class="header-nav__item">
                     <a href="./pages/gallery-page.html" class="header-nav__link">Gallery</a>
@@ -99,8 +99,8 @@
                             of coffee. It’s the perfect place to relax on your own or to catch up with friends while
                             enjoying
                             great coffee. </p>
-                        <a href="./pages/menu-page.html" class="about-container__button">Shop
-                            Now </a>
+                        <a href="./pages/menu-page.html" class="about-container__button">Menu
+                           </a>
                     </div>
                 </div>
             </article>
@@ -110,8 +110,14 @@
     <footer class="footer">
         <div class="inner-footer">
 
-            <div class="footer-items">
-                <img src="./assets/logo/logo22_sm.png" alt="small-logo" class="footer-items__logo">
+            <div class="footer-items footer-items__logo">
+                <a href="./index.html">
+                    <picture>
+                        <source srcset="./assets/logo/logo22.png" media="(min-width: 1280px)">
+                        <img src="./assets/logo/logo22_sm.png" alt="logo-image">
+                    </picture>
+                <!-- <img src="./assets/logo/logo22_sm.png" alt="small-logo"> -->
+            </a>
             </div>
 
             <div class="footer-items footer-items__top">
@@ -150,17 +156,23 @@
             <div class="footer-items">
                 <h3 class="footer-items__title">Contact us</h3>
                 <ul class="footer-items__content">
-                    <li class="footer-items__list"><i class="fa fa-map-marker" aria-hidden="true"></i>123 Main Street
+                    <li class="footer-items__list"><i class="fa fa-map-marker" aria-hidden="true"></i>1234 Coffee Street
                     </li>
                     <li class="footer-items__list"><i class="fa fa-phone" aria-hidden="true"></i>604-123-4567</li>
-                    <li class="footer-items__list"><i class="fa fa-envelope" aria-hidden="true"></i>steamycup@gmail.com
+                    <li class="footer-items__list"><i class="fa fa-envelope" aria-hidden="true"></i>coffee@gmail.com
                     </li>
                 </ul>
 
                 <div class="social-media">
-                    <a href="#"><i class="fa fa-instagram"></i></a>
-                    <a href="#"><i class="fa fa-facebook"></i></a>
-                    <a href="#"><i class="fa fa-google-plus-square"></i></a>
+                    <a href="#" class="footer-social__icons">
+                        <i class="fa fa-facebook"></i>
+                        </a>
+                        <a href="#" class="footer-social__icons">
+                        <i class="fa fa-twitter"></i>
+                        </a>
+                        <a href="#" class="footer-social__icons">
+                        <i class="fa fa-instagram"></i>
+                        </a>
                 </div>
             </div>
         </div>
