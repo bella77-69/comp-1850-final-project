@@ -55,8 +55,8 @@
 
     <main>
  
-       <section class="contact"> 
-        <div class="contact-title--wrapper">
+       <section id="contact"> 
+        <!-- <div class="contact-title--wrapper">
           <h2 class="contact-title">Contact Us</h2>
       </div>
         <article class="contact-box">
@@ -100,7 +100,62 @@
           <div class="contact-box--wrapper contact-image--wrapper contact-image__padding">
             <img src="../assets/images/contact.png" alt="contact-us-img"> 
           </div>
-      </article>
+      </article> -->
+      <div class="contact-box">
+        <div class="contact-box__left">
+        
+          <h2 class="contact-box__title">Contact Us</h2>
+          <img src="../assets/images/contact.png" alt="contact-us-img"> 
+          <div class="contact-box__links">
+            <div class="contact-box__content">
+              <a href="#" class="contact-social__link">
+                <i class="fa fa-facebook"></i>
+                </a>
+            
+            </div>
+            <div class="contact-box__content">
+              <a href="#" class="contact-social__link">
+                <i class="fa fa-twitter"></i>
+                </a>
+            </div>
+            <div class="contact-box__content">
+              <a href="#" class="contact-social__link">
+                <i class="fa fa-instagram"></i>
+                </a>
+            </div>
+            <div class="contact-box__content">
+              <a href="#" class="contact-social__link">
+                <i class="fa fa-youtube"></i>
+                </a>
+            </div>
+          </div>
+        </div>
+        <div class="contact-box__right">
+          <form action="" method="post" class="contact-form">
+            <div class="contact-box__item">
+              <label for="name" class="contact-form__label">
+                <input class="contact-form__input" placeholder="Your name" type="text" id="name" name="name" required="required">
+       </label>
+            </div>
+            <div class="contact-box__item">
+              <label for="phone-number" class="contact-form__label">
+                <input class="contact-form__input" placeholder="Your Phone Number (optional)" type="tel" name="phone-number" id="phone-number" required="required">
+              </label>
+            </div>
+            <div class="contact-box__item">
+              <label for="email" class="contact-form__label">
+                <input class="contact-form__input" placeholder="Your Email Address" type="email" id="email" name="email" required="required">
+              </label>
+            </div>
+            <div class="contact-box__item">
+              <label for="message" class="contact-form__label">
+                <textarea class="contact-form__input" placeholder="Type your message here...." name="message" type="text" id="message" name="message" required="required"></textarea>
+              </label>
+            </div>
+            <button class="contact-form__label--btn">Send</button>  
+          </form>
+        </div>
+      </div>
         </section>
         
     </main>
