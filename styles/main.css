@@ -838,52 +838,112 @@ textarea:valid+label {
 /* review-page.html */
 .review {
   background-color: var(--background-menu);
+  padding: 1rem;
 }
 
-.review-title {
-  font-size: 1rem;
-  text-align: center;
-  padding: 1rem 0 0;
-}
-
-.review-text {
-  font-size: .9375rem;
-  text-align: center;
-  padding: 1rem 4rem;
-}
-.review-container {
+.review-box {
   display: flex;
+  flex-direction: column;
+  align-items: center;
   width:100%;
+  padding: 1rem;
 }
+
+.review-box__title {
+  font-size: 1.5rem;
+  font-weight: 400;
+  text-align: center;
+  color: var(--text-dark);
+  padding-top: 2rem;
+  padding-bottom: 1rem;
+  text-align: center;
+}
+
+.review-box__text {
+  font-size: .9375rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+  line-height: 1.25rem;
+}
+
+.review-box__container {
+  display: flex;
+  flex-direction: column;
+  /* padding: 1em; */
+  justify-content: center;
+}
+
+.review-box--wrapper {
+  box-shadow: 0px 1px 3px 0.15px rgba(0, 0, 0, 0.35);
+  background-color: var(--background-header);
+  padding: 1.25rem;
+  margin: 1rem 0;
+  cursor: pointer;
+  width: 100%;
+}
+
+.review-box__subtitle {
+  font-size: 1rem;
+  padding-bottom: 1rem;
+  /* text-align: center; */
+}
+
+.review-box__heading {
+  font-size: 1rem;
+  font-weight: 400;
+}
+
+.review-box__subtext{ 
+  font-size: .875rem;
+  font-weight: 400;
+}
+
+.review-box__content {
+  font-size: .9375rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+
+.review-box__small {
+  font-size: .875rem;
+  font-weight: 400;
+  /* padding: 0.5rem 0; */
+}
+
+.review-box__list {
+  list-style: none;
+}
+
+.review-box__item {
+  font-size: .875rem;
+  font-weight: 400;
+  padding: 0.5rem 0;
+}
+/* .review-box__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 1rem;
+} */
+
+
+/* .review-box__container--wrapper {
+  margin: 1rem;
+} */
+
+/* .review-box__text {
+
+} */
+
 
 .review-container__aside {
   width: 30%;
   padding: 1rem;
 }
-.review-container--wrapper {
-  box-shadow: 2px 2px 30px rgba(0,0,0,0.1);
-  background-color: var(--background-header);
-  padding: 20px;
-  margin: 1rem;
-  cursor: pointer;
-  width: 100%;
-}
 
-.review-container__top {
-  margin: 0;
-  margin-bottom: 0.625rem;
-}
 
-.review-container__text {
-  margin: 0;
-  margin-bottom: .625rem;
-  font-size: .9375rem;
-}
 
-.review-container__name {
-  margin: 0;
-  font-size: .9375rem;
-}
 
 /* review-page media queries */
 @media (min-width: 768px) {
@@ -904,7 +964,22 @@ textarea:valid+label {
   .review-container__text {
     font-size: 1rem;
   }
-}
+ 
+    .review-box__container {
+      flex-direction: row;
+      flex-wrap: wrap;
+      width: 75%;
+      }
+      /* .review-box--wrapper {
+      width: 40%;
+      margin: 1rem 2rem;
+      } */
+      .review-box__text {
+      padding-bottom: 0;
+      margin-bottom: 1rem;
+      }
+    }
+
 @media (min-width: 1280px) { 
   .review {
     width: 100%;
@@ -924,10 +999,65 @@ textarea:valid+label {
   .review-container__name {
     font-size: 1.125rem;
   }
+    .review-box--wrapper {
+    padding: 2rem;
+    width: 100%;
+    }
+    /* .review-box__text {
+    line-height: 31px;
+    height: 12.25em;
+    } */
+    .review--wrapper {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1rem;
+      width: 100%;
+      justify-items: center;
+    }
+    .review-box {
+      width: 100%;
+    }
+    /* .review-box--wrapper {
+      width: 40%;
+    } */
+    .review-box__container {
+      padding: 2rem;
+      width: 100%;
+    }
+  
 
 }
 
 @media (min-width: 1440px) {
+}
+
+/* review-page.html aside section */
+.aside {
+  background-color: var(--beige-color);
+  width: 100%;
+  padding: 1rem;
+}
+
+.aside-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.aside-box--wrapper {
+  background-color: var(--span-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.aside-box__text {
+  font-size: .9375rem;
+  text-align: justify;
 }
 /* menu-page */
 .menu{
@@ -1344,6 +1474,8 @@ td, th {
   padding: 2rem 6rem;
   }
 }
+
+
 /* footer */
 .footer {
 	width: 100%;
