@@ -12,6 +12,7 @@
   </head>
 
   <body>
+    <div id="container">
     <header class="header">
       <div class="header-logo">
         <a href="../index.html">
@@ -53,7 +54,9 @@
 
     <main>
       <section class="review">
+        <div class="review-title--wrapper">
         <h2 class="review-box__title">Lorem ipsum dolor!</h2>
+      </div>
         <article class="review-box">
           <h3 class="review-box__subtitle">Massa dolor</h3>
           
@@ -152,31 +155,31 @@
             <p class="review-box__content">Lorem ipsum dolor sit amet,
               consectetuer adipiscing
               elit. Aenean tesque eu, pretium quis, sem.</p>
-            <table>
+            <table class="review-box__table">
               <tr>
-                <th>Header 1</th>
-                <th>Header 2</th>
-                <th>Header 3</th>
+                <th class="review-box__table--item">Header 1</th>
+                <th class="review-box__table--item">Header 2</th>
+                <th class="review-box__table--item">Header 3</th>
               </tr>
               <tr>
-                <td>Row 1 Field 1</td>
-                <td>Row 1 Field 2</td>
-                <td>Row 1 Field 3</td>
+                <td class="review-box__table--item">Row 1 Field 1</td>
+                <td class="review-box__table--item">Row 1 Field 2</td>
+                <td class="review-box__table--item">Row 1 Field 3</td>
               </tr>
               <tr>
-                <td>Row 2 Field 1</td>
-                <td>Row 2 Field 2</td>
-                <td>Row 2 Field 3</td>
+                <td class="review-box__table--item">Row 2 Field 1</td>
+                <td class="review-box__table--item">Row 2 Field 2</td>
+                <td class="review-box__table--item">Row 2 Field 3</td>
               </tr>
               <tr>
-                <td>Row 3 Field 1</td>
-                <td>Row 3 Field 2</td>
-                <td>Row 3 Field 3</td>
+                <td class="review-box__table--item">Row 3 Field 1</td>
+                <td class="review-box__table--item">Row 3 Field 2</td>
+                <td class="review-box__table--item">Row 3 Field 3</td>
               </tr>
               <tr>
-                <td>Row 4 Field 1</td>
-                <td>Row 4 Field 2</td>
-                <td>Row 4 Field 3</td>
+                <td class="review-box__table--item">Row 4 Field 1</td>
+                <td class="review-box__table--item">Row 4 Field 2</td>
+                <td class="review-box__table--item">Row 4 Field 3</td>
               </tr>
             </table>
           </div>
@@ -198,10 +201,10 @@
   
    
       </section>
-      <section class="aside">
-        <div class="aside-box">
+      <section class="review-aside">
+        <div class="review-aside__box">
           <h3 class="review-box__subtitle">Massa dolor</h3>
-          <div class="aside-box--wrapper">
+          <div class="review-aside__box--wrapper">
             <div class="review-box">
               <p class="review-box__content">Lorem ipsum dolor sit amet,
                 consectetuer adipiscing
@@ -211,7 +214,7 @@
                 ultricies nec, pellentesque eu, pretium quis, sem.</p>
   
             </div>
-            <blockquote
+            <blockquote class="review-aside__blockquote"
               cite="https://www.opensourceshakespeare.org/views/plays/play_view.php?WorkID=othello&Act=5&Scene=2&Scope=scene">
               <p class="review-box__content">I am one who loved not wisely but
                 too well.</p>
@@ -275,9 +278,18 @@
           </ul>
 
           <div class="social-media">
-            <a href="#"><i class="fa fa-instagram"></i></a>
-            <a href="#"><i class="fa fa-facebook"></i></a>
-            <a href="#"><i class="fa fa-google-plus-square"></i></a>
+            <a href="#" class="footer-social__icons">
+              <i class="fa fa-facebook"></i>
+              </a>
+              <a href="#" class="footer-social__icons">
+              <i class="fa fa-twitter"></i>
+              </a>
+              <a href="#" class="footer-social__icons">
+              <i class="fa fa-instagram"></i>
+              </a>
+              <a href="#" class="footer-social__icons">
+                  <i class="fa fa-regular fa-arrow-up"></i>
+              </a>
           </div>
         </div>
       </div>
@@ -289,7 +301,7 @@
     </footer>
 
     <script src="../scripts/main.js"></script>
-
+</div>
   </body>
 
 </html>
