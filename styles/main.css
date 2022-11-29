@@ -16,7 +16,6 @@
     --span-color: #7394bc;
     --overlay-color: rgb(24,14,11);
     --white-color: #f1e9e5;
-
 }    
 
 * {
@@ -35,17 +34,21 @@ img {
 }
 
 a {
-  color:#211b18;
+  color:var(--text-dark);
   text-decoration: none;
 }
 
+a:visited {
+  color: var(--text-dark);
+}
+
 a:hover {
-  color:#e6e2dd;
+  color: var(--white-color);
 }
 
 #container {
-  min-height: 100vh;
- 
+  min-height: 100vh; 
+  margin: 0 auto;
 }
 
 /* Header */
@@ -55,8 +58,6 @@ a:hover {
   flex-direction: column;
   align-items: center;
   padding: .3125rem;
-  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 2px 2px rgba(0, 0, 0, 0.06),
-  0 0 2px rgba(0, 0, 0, 0.07);
   width: 100%;
 }
 
@@ -76,7 +77,7 @@ a:hover {
   justify-content: space-between;
   align-items: center;
   padding-bottom: 2rem;
-  height: 9vh;
+  height: 7vh;
 }
 
 .header-nav__menu {
@@ -114,7 +115,7 @@ a:hover {
 }
 
  /* Header media queries */
- @media (max-width: 668px) {
+@media (max-width: 668px) {
     .header-nav__menu {
     position: fixed;
     left: -100%;
@@ -179,9 +180,6 @@ a:hover {
     .header-nav__link {
     font-size: 1.125rem;
     }
-    .header-nav__link:hover {
-    border-bottom: 2px solid var(--link-color);
-    }
 }
 
 @media (min-width: 1024px) {
@@ -218,7 +216,6 @@ a:hover {
     font-size: 1.25rem;
     }
 }
-
 /* hero section index.html */
 .hero {
   position: relative;   
@@ -325,17 +322,17 @@ a:hover {
     padding-top: 2rem;
     }
     .hero-overlay__title {
-    font-size: 5rem;
+    font-size: 4rem;
     padding: 0 0 0 4rem;
     }
     .hero-overlay__subtitle {
     transform: translateY(16vw);
-    font-size: 2.75rem;
+    font-size: 3rem;
     padding: 1rem 0 4rem 4rem;
     }
     .hero-overlay__btn {
-    transform: translateY(15vw);
-    font-size: 1.75rem;
+    transform: translateY(17vw);
+    font-size: 1.5rem;
     margin-left: 5rem;
     }
 }
@@ -426,7 +423,7 @@ a:hover {
     .about-container--wrapper {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    align-items: center;
+    align-items: start;
     grid-gap: 1rem;
     }
     .about-container__title {
@@ -453,8 +450,10 @@ a:hover {
     grid-column: 2/-1;
     grid-row: 1;
     }
+    .about-container__content--bottom {
+      margin-top: -1rem;
+    }
 }
-
 @media (min-width: 1024px) {
     .about-container__text {
     font-size: 1.125rem;
@@ -485,7 +484,6 @@ a:hover {
     padding-top: 66%;
     }
 }
-
 @media (min-width: 1440px) {
     .about-container--wrapper {
     grid-gap: 2.25rem;
@@ -588,6 +586,7 @@ a:hover {
   cursor: pointer;
   width: 15%;
   justify-content: center;
+  border-radius: .3125rem;
   ;
 }
 
@@ -622,7 +621,6 @@ a:hover {
     padding: .5rem
     }
 }
-
 @media (min-width: 1280px) {
     .menu-title {
     font-size: 2rem;
@@ -703,6 +701,7 @@ td, th {
   font-size: 1rem;
   font-weight: 400;
 }
+
 .reward-box__bottom {
   padding: 1rem 0;
   }
@@ -743,7 +742,6 @@ td, th {
     text-align: center;
     }
 }
-
 @media (min-width: 1024px) {
     .reward-box {
     display: flex;
@@ -771,8 +769,11 @@ td, th {
     font-size: 1.125rem;
     padding: .375rem;
     }
+    .reward-box__image--wrapper {
+    padding: .9375rem;
+    margin-top: .5rem;
+    }
 }
-
 @media (min-width: 1280px) {
     .reward-title {
     font-size: 2rem;
@@ -788,38 +789,45 @@ td, th {
     }
     .reward-box__text {
     font-size: 1.25rem;
+    width: 55%;
     }
     td, th {
     padding: .625rem;
     }
+    .reward-box__bottom {
+    padding-top: 2rem;
+    }
+    .reward-box__image--wrapper {
+    padding: 1rem;
+    margin-top: .75rem;
+    }
 }
-
 @media (min-width: 1440px) {
     .reward-box--wrapper {
     padding: 2rem 2rem;
     }
     td, th {
     font-size: 1.25rem;
-    padding: .75rem;
+    padding: .875rem;
     }
 }
-
 @media (min-width: 1600px) {
-    /* .reward-box--wrapper {
-    padding: 2rem 6rem;
-    } */
     .reward-box {
     align-items: center;
-    width: 74%;
+    width: 75%;
     }
     .reward-box--wrapper {
     padding: 2rem;
+    margin-top: 2%;
     }
-    td, th {
-    padding: 1rem;
+    .reward-box__image--wrapper {
+    padding: 1.25rem;
+    margin-top: 1.25rem;
+    }
+    .reward-table {
+    margin-top: 2.5rem;
     }
 }
-
 /* location page (location-page.html)*/
 .location {
   margin: 0 auto;
@@ -873,7 +881,7 @@ td, th {
     .location-box {
     padding: 1rem;
     }  
-  .location-box__content {
+    .location-box__content {
     width: 60%;
     }
     .location-box--wrapper {
@@ -1055,7 +1063,8 @@ td, th {
 }
 
 .review-box__list {
-  list-style: none;
+  list-style-image: url("../assets/logo/coffee.png");
+  padding: 1rem;
 }
 
 .review-box__item {
@@ -1068,6 +1077,17 @@ td, th {
   font-size: .875rem;
   font-weight: 400;
   padding: 0.5rem 0;
+  color: var(--text-dark); 
+}
+
+.review-box__table tr:nth-of-type(odd) {
+  background-color: var(--background-menu);
+}
+
+.reward-table { 
+  width: 100%; 
+  border-collapse: collapse; 
+  margin-top: 1.5rem;
 }
 
 .review-aside {
@@ -1135,6 +1155,13 @@ td, th {
     .review-box__content {
     font-size: 1rem;
     }
+    .review-box__table {
+    padding: 1rem;
+    }
+    .review-box__table--item {
+    font-size: 1rem;
+    padding: 1rem;
+    }
 }
 
 @media (min-width: 1280px) { 
@@ -1187,7 +1214,6 @@ td, th {
     width: 100%;
     }
     .review-box__table--item {
-    font-size: 1rem;
     padding: 1rem;
     }
 }
@@ -1265,6 +1291,7 @@ td, th {
   margin: .125rem auto;
   border: none;
   cursor: pointer;
+  border-radius: .3125rem;
 }
 
 .contact-form__label--btn:hover {
@@ -1287,13 +1314,13 @@ td, th {
     padding: 1.25rem;
     }
 }
-
 @media (min-width: 1280px) {
     .contact-box__title {
     font-size: 2rem;
     }
     .contact-box {
     width: 70%;
+    align-items: flex-start;
     }
     .contact-social__link {
     font-size: 1.25rem;
@@ -1301,12 +1328,20 @@ td, th {
     }
     .contact-box__right {
     width: 80%;
+    padding-left: 1rem;
+
     }
     .contact-box__left {
     width: 80%;
+    padding: 0;
+    padding-right: 1rem;
     }
 }
-
+@media (min-width: 1850px) {
+    .contact-box__right {
+    height: 34vh;
+    }
+}
 /* footer */
 .footer {
 	width: 100%;
@@ -1489,4 +1524,3 @@ td, th {
     display: inline;
     }
 }
-
