@@ -5,8 +5,16 @@ Steamy Cup <br/>
 <h3 align="center">For my final project I created a web application called Steamy Cup.</h3>
 
 <div align="center">
-<img src="./img.jpg" alt="demo"/>
+<img src="./image.png" alt="demo"/>
 </div>
+
+<div align="center">
+<img src="./image-1.png" alt="demo"/>
+<img src="./image-2.png" alt="demo"/>
+<img src="./image-3.png" alt="demo"/>
+<img src="./image-4.png" alt="demo"/>
+</div>
+
 
 ## Built With
 
