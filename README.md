@@ -1,12 +1,18 @@
-Steamy Cup
+<h2 align="center">
+Steamy Cup <br/>
+</h2>
 
-For my final project I created a web application called Steamy Cup.
+<h3 align="center">For my final project I created a web application called Steamy Cup.</h3>
 
-My idea came from the wine world can be overwhelming with all the many choices that it provides. There are hundreds of different varieties of wine and I am usually the one standing in the wine section unsure of what wine to choose.
+<div align="center">
+<img src="./image.png" alt="demo"/>
+</div>
 
-Che Vino is designed to help the user discover new wines, read reviews, and check out wine scores. It helps take the guess work out of making that wine decision.
+## Built With
 
-It was built using HTML, CSS, and JavaScript.
+Steamy Cup was built using these technologies:
 
-Project Overview
+- HTML
+- CSS
+- JavaScript
 
