@@ -8,6 +8,11 @@ Steamy Cup <br/>
 <img src="./img.jpg" alt="demo"/>
 </div>
 
+<div>
+<img src="./image-1.png" alt="demo"/>
+<img src="./image-2.png" alt="demo"/>
+<img src="./image-3.png" alt="demo"/>
+<img src="./image-4.png" alt="demo"/>
 ## Built With
 
 Steamy Cup was built using these technologies:
