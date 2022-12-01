@@ -6,7 +6,7 @@ Steamy Cup <br/>
 
 <div align="center">
 <img src="../image.png" alt="demo"/>
-
+<img src="./image.png" alt="demo"/>
 </div>
 
 ## Built With
